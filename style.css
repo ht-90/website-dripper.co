@@ -1,0 +1,269 @@
+* {
+  margin: 0px;
+  box-sizing: border-box; 
+}
+
+body {
+  background-image: url("./img/page-background.jpg");
+  background-size: 100%;
+  max-width: 1300px;
+  width: 100%;
+}
+
+.top-layout {
+  display: grid;
+  grid-template-columns: 260px auto;
+}
+
+  .header-side {
+    grid-column: 1;
+    background-color: rgb(230, 230, 230, 0.6);
+    color: rgb(30, 30, 30);
+    position: fixed;
+    height: 100%;
+  }
+    .shop-name {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 36px;
+      line-height: 80px;
+      margin: 30px;
+      border-bottom-style: solid;
+      border-color: rgb(30, 30, 30);
+      border-width: 2px;
+    }
+    .header-side li {
+        list-style: none;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        margin: 20px 30px 20px 30px;
+    }
+    .header-side a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .header-side span {
+      color: rgb(200, 50, 50);
+    }
+
+
+  .header-top {
+      display: none;
+  }
+
+
+  .contents {
+      grid-column: 2;
+      display: grid;
+      grid-template-rows: 500px 300px 300px 300px 300px 400px 400px 100px;
+      margin: 0px 10px 0px 10px;
+      grid-gap: 5px;
+  }
+    .contents-1 {
+      grid-row: 1;
+      background-image:url("./img/top-image.jpg");
+      background-size: cover;
+    }
+        .contents-1-mask {
+          background-color: rgb(250, 250, 250, 0.7);
+          height: 500px;
+        }  
+          .contents-1-para {      
+            text-align: center;
+            padding: 20px;
+          }
+          .contents-1 h1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          }
+          .contents-1 h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+          }
+          .contents-1 p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+          }
+          .contents-1-para span {
+            color: rgb(200, 50, 50);
+          }
+
+    .contents-2 {
+      grid-row: 2;
+      background-color:rgb(30, 30, 30, 0.6);
+      color: rgb(250, 250, 250);
+      text-align: left;
+      display: grid;
+      grid-template-columns: 60% 40%;
+    }
+      .contents-2-para {
+        grid-column: 1;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 30px;
+      }
+      .contents-2-img {
+        grid-column: 2;
+        background-image: url("./img/coffee.jpg");
+        background-size: cover;
+      }
+
+    .contents-3 {
+      grid-row: 3;
+      background-color:rgb(250, 250, 250, 0.6);
+      text-align: right;
+      display: grid;
+      grid-template-columns: 40% 60%;
+    }
+      .contents-3-para {
+        grid-column: 2;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 30px;
+      }
+      .contents-3-img {
+        grid-column: 1;
+        background-image: url("./img/brewing.jpg");
+        background-size: cover;
+      }
+
+    .contents-4 {
+      grid-row: 4;
+      background-color:rgb(100, 50, 0, 0.6);
+      text-align: left;
+      color: rgb(230, 230, 230);
+      display: grid;
+      grid-template-columns: 60% 40%;
+    }
+      .contents-4-para {
+        grid-column: 1;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 30px;
+      }
+      .contents-4-img {
+        grid-column: 2;
+        background-image: url("./img/food.jpg");
+        background-size: cover;
+      }
+
+    .contents-5 {
+        grid-row: 5;
+        background-color:rgb(30, 30, 30, 0.6);
+        color: rgb(250, 250, 250);
+        text-align: right;
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+      .contents-5-para {
+        grid-column: 2;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 30px;
+      }
+      .contents-5-img {
+        grid-column: 1;
+        background-image: url("./img/beans.jpg");
+        background-size: cover;
+      }
+
+    .contents-6 {
+        grid-row: 6;
+        background-color:rgb(230, 230, 230, 0.6);
+        text-align: left;
+        background-image: url("./img/interior.jpg");
+        background-size: cover;
+    }
+      .contents-6-mask {
+        background-color: rgb(250, 250, 250, 0.7);
+        height: 400px;
+      }  
+        .contents-6-para {
+          font-family: Arial, Helvetica, sans-serif;
+          color: rgb(50, 50, 50);
+          margin: 30px;
+          float: left;
+        }
+
+    .contents-7 {
+        grid-row: 7;
+        background-color:rgb(30, 30, 30, 0.6);
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: rgb(250, 250, 250);
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+      .contents-7-location {
+        grid-column: 1;
+      }
+        .contents-7-location h3 {
+          font-size: 22px;
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+        .contents-7 img {
+          max-height: 350px;
+          max-width: 400px;
+          height: auto;
+          width: auto;
+        }
+      .contents-7-contact {
+        grid-column: 2;
+      }
+        .contents-7-contact h3 {
+          font-size: 22px;
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+        .contents-7-contact form {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+          .input-box {
+            color: rgb(100, 100, 100);
+            margin-bottom: 15px;
+            width: 70%;
+          }
+          .inquiry-box {
+            color: rgb(100, 100, 100);
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 15px;
+            width: 70%;
+            line-height: 15px;
+          }
+          .submit-button {
+            width: 100px;
+            border-radius: 4px;
+            color: white;
+            background-color: rgb(10, 100, 10);
+            height: 30px;
+          }
+
+  .footer {
+    grid-row: 8;
+    background-color: rgb(150, 150, 150, 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgb(50, 50, 50);
+    text-align: center;
+  }
+    .footer-social {
+      height: 40px;
+      width: 100%;
+      text-align: center;
+      line-height: 40px;
+    }
+      .footer-social ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        width: 150px;
+      }
+      .footer-social li {
+        display: inline-block;
+      }
+      .footer-social i {
+        color: rgb(230, 230, 230);
+        font-size: 32px;
+      }
+    .footer-copyright {
+      height: 60px;
+      border-top-style: solid;
+      border-width: 0.5px;
+      border-color: rgb(50, 50, 50);
+      margin-right: 20px;
+      margin-left: 20px;
+    }
