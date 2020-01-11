@@ -1,56 +1,81 @@
 @media(max-width: 1000px) {
 
     body {
-        background-image: url("./img/page-background.jpg");
-        background-size: 100%;
-        max-width: 1000px;
-        width: 100%;
-      }
-
-    .header-side {
-        display: none;
+      background-image: url("../img/page-background.jpg");
+      background-size: 100%;
+      max-width: 1000px;
+      width: 100%;
     }
 
-    .header-top {
+    .top-layout {
+      display: grid;
+      grid-template-columns: 0px auto;
+    }
+
+      /* header-side is hidden when media width<1000 */
+      .header-side {
+        display: none;
+      }
+
+      .header-top {
         display: block;
+        height: 80px;
         width: 100%;
         background-color: rgb(30, 30, 30, 0.8);
         color: rgb(230, 230, 230);
         position: fixed;
-    }
-    .shop-name {
+      }
+      .shop-name {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 22px;
         line-height: 24px;
         margin-left: 30px;
+        margin-right: 5px;
         vertical-align: middle;
         float: left;
-    }
-    .menu-icon {
+      }
+      /* when top menu is not open */
+      .menu-icon {
         vertical-align: middle;
         float: right;
         margin: 30px 50px 30px 20px;
-    }
-      .header-top li {
-          display: none;
+        cursor: pointer;
+      }
+      /* when top menu is open */
+      .menu-icon-close {
+        display: none;
+        vertical-align: middle;
+        float: right;
+        margin: 30px 50px 30px 20px;
+        cursor: pointer;
+
+      }
+
+      .menu-wrapper {
+        display: none;
+        height: 160px;
+        width: 100%;
+        margin-top: 80px;
+        position: fixed;
+        background-color: rgba(50, 50, 50, 0.8);
+        color: rgb(230, 230, 230);
+        font-weight: normal;
+        text-align: center;
+      }
+        .header-top li {
           list-style: none;
-          float: left;
           font-family: Arial, Helvetica, sans-serif;
           font-size: 16px;
           margin: 10px 15px 10px 15px;
-      }
-      .header-top a {
-        color: inherit;
-        text-decoration: none;
-      }
-      .header-top span {
-        color: rgb(200, 50, 50);
-      }
+        }
+        .header-top a {
+          color: inherit;
+          text-decoration: none;
+        }
+        .header-top span {
+          color: rgb(200, 50, 50);
+        }
 
-    .top-layout {
-        display: grid;
-        grid-template-columns: 0px auto;
-      }
 
      .contents {
          grid-column: 2;
@@ -62,7 +87,7 @@
 
       .contents-1 {
         grid-row: 1;
-        background-image:url("./img/top-image.jpg");
+        background-image:url("../img/top-image.jpg");
         background-size: cover;
       }
           .contents-1-mask {

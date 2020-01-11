@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url("./img/page-background.jpg");
+  background-image: url("../img/page-background.jpg");
   background-size: 100%;
   max-width: 1300px;
   width: 100%;
@@ -25,11 +25,16 @@ body {
     .shop-name {
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       font-size: 36px;
+      font-weight: bold;
       line-height: 60px;
       margin: 30px;
       border-bottom-style: solid;
       border-color: rgb(30, 30, 30);
       border-width: 2px;
+    }
+    .shop-name a {
+      color: inherit;
+      text-decoration: none;
     }
     .header-side li {
         list-style: none;
@@ -38,15 +43,19 @@ body {
         font-size: 24px;
         margin: 20px 30px 20px 30px;
     }
-    .header-side a {
+    .header-side li a {
       color: inherit;
       text-decoration: none;
+      border-bottom-style: none;
+      border-color: rgb(140, 30, 30);
+      border-width: 2px;
     }
     .header-side span {
       color: rgb(200, 50, 50);
     }
 
-
+    
+  /* header-top is displayed in media width<1000 in responsive.css */
   .header-top {
       display: none;
   }
@@ -69,7 +78,7 @@ body {
 
     .contents-1 {
       grid-row: 1;
-      background-image:url("./img/top-image.jpg");
+      background-image:url("../img/top-image.jpg");
       background-size: cover;
     }
         .contents-1-mask {
@@ -114,7 +123,7 @@ body {
       }
       .contents-2-img {
         grid-column: 2;
-        background-image: url("./img/coffee.jpg");
+        background-image: url("../img/coffee.jpg");
         background-size: cover;
       }
 
@@ -132,7 +141,7 @@ body {
       }
       .contents-3-img {
         grid-column: 1;
-        background-image: url("./img/brewing.jpg");
+        background-image: url("../img/brewing.jpg");
         background-size: cover;
       }
 
@@ -151,7 +160,7 @@ body {
       }
       .contents-4-img {
         grid-column: 2;
-        background-image: url("./img/food.jpg");
+        background-image: url("../img/food.jpg");
         background-size: cover;
       }
 
@@ -170,7 +179,7 @@ body {
       }
       .contents-5-img {
         grid-column: 1;
-        background-image: url("./img/beans.jpg");
+        background-image: url("../img/beans.jpg");
         background-size: cover;
       }
 
@@ -178,7 +187,7 @@ body {
         grid-row: 6;
         background-color:rgb(230, 230, 230, 0.6);
         text-align: left;
-        background-image: url("./img/interior.jpg");
+        background-image: url("../img/interior.jpg");
         background-size: cover;
     }
       .contents-6-mask {
